@@ -44,7 +44,7 @@ const MemberLayout = () => {
                     {/* Logo */}
                     <div className="flex h-20 items-center border-b border-slate-100 px-6">
                         <Link
-                            to="/member/dashboard"
+                            to="/"
                             className="flex items-center gap-3"
                         >
                             <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-indigo-600 text-sm font-bold text-white">
@@ -69,8 +69,8 @@ const MemberLayout = () => {
                                     key={item.path}
                                     to={item.path}
                                     className={`flex items-center gap-3 rounded-xl px-4 py-3 text-sm font-medium transition ${active
-                                            ? "bg-indigo-50 text-indigo-700"
-                                            : "text-slate-600 hover:bg-slate-50 hover:text-slate-900"
+                                        ? "bg-indigo-50 text-indigo-700"
+                                        : "text-slate-600 hover:bg-slate-50 hover:text-slate-900"
                                         }`}
                                 >
                                     <Icon size={19} />
@@ -141,8 +141,8 @@ const MemberLayout = () => {
                                         to={item.path}
                                         onClick={() => setIsMobileMenuOpen(false)}
                                         className={`flex items-center gap-3 rounded-xl px-4 py-3 text-sm font-medium ${active
-                                                ? "bg-indigo-50 text-indigo-700"
-                                                : "text-slate-600"
+                                            ? "bg-indigo-50 text-indigo-700"
+                                            : "text-slate-600"
                                             }`}
                                     >
                                         <Icon size={18} />
